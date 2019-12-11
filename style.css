@@ -1,0 +1,91 @@
+body{
+  background-color: #073349;
+}
+#main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#msg{
+  font-family: cursive;
+  font-size: 25px;
+  color: whitesmoke;
+  text-align: center;
+}
+#error{
+  display: table;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#left,#right{
+  font-family: cursive;
+  font-size: 100px;
+  color: whitesmoke;
+  display: table-cell;
+}
+#map{
+  height: 150px;
+  width: 150px;
+  background: url(earth-icon-vector.png);
+  background-size: 100% 100%;
+  position: relative;
+  top: 30px;
+}
+#locator{
+  position: absolute;
+  left: 28%;
+  top: 20%;
+  animation: move 6s infinite;
+}
+#info{
+  font-family: cursive;
+  font-size: 13px;
+  text-align: center;
+  position: relative;
+  color: whitesmoke;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#btn{
+  height: 30px;
+  width: 120px;
+  color: whitesmoke;
+  background-color: #E94674;
+  font-family: monospace;
+  font-size: 13px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 15px;
+  position: relative;
+  margin-top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+#btn:hover{
+  cursor: pointer;
+}
+#btn a{
+  text-decoration: none;
+  color: whitesmoke;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes move{
+  0%{margin-top: -30px;}
+  10%{margin-top: 0px;}
+  20%{margin-top: -30px;}
+  30%{margin-top: 0px;}
+  40%{margin-top: -30px;}
+  50%{
+    margin-top: 0px;
+    transform: rotateY(360deg);
+  }
+  60%{margin-top: -30px;}
+  70%{margin-top: 0px;}
+  80%{margin-top: -30px;}
+  90%{margin-top: 0px;}
+  100%{margin-top: -30px;}
+}
